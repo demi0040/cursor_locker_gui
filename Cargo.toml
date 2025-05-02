@@ -1,0 +1,11 @@
+
+[package]
+name = "cursor_locker_gui"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+winit = "0.29"      # For display enumeration and windowing
+enigo = "0.1"       # For cursor manipulation (cross-platform, but limited)
+winapi = { version = "0.3", features = ["winuser"] }
+crossterm = "0.29.0"
