@@ -1,7 +1,7 @@
 use std::io::{self, Write};
 use winit::{
     event_loop::EventLoop,
-    monitor::{MonitorHandle, VideoMode},
+    monitor::MonitorHandle,
 };
 
 /// Lists available monitors and returns a vector of MonitorHandle.
