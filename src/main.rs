@@ -45,7 +45,7 @@ fn main() {
             } else {
                 cursor::unlock_cursor();
             }
-            thread::sleep(Duration::from_millis(50)); // 20 times per second
+            thread::sleep(Duration::from_millis(10)); // 20 times per second
         }
         // Unlock cursor when exiting
         cursor::unlock_cursor();
