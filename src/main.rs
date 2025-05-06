@@ -41,6 +41,7 @@ fn main() {
         while running_clone.load(Ordering::Relaxed) {
             if !paused_clone.load(Ordering::Relaxed) {
                 cursor::lock_cursor_to_rect(lock_x, lock_y, lock_w, lock_h);
+                cursor::force_cursor_inside(lock_x, lock_y, lock_w, lock_h);
             } else {
                 cursor::unlock_cursor();
             }
